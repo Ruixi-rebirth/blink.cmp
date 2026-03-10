@@ -11,6 +11,8 @@ end
 local current_file_dir = debug.getinfo(1).source:match('@?(.*/)')
 local current_file_dir_parts = vim.split(current_file_dir, '/')
 local root_dir = table.concat(utils.slice(current_file_dir_parts, 1, #current_file_dir_parts - 6), '/')
+print('root_dir:' .. root_dir)
+
 local lib_folder = root_dir .. '/target/release'
 local lib_filename = 'libblink_cmp_fuzzy' .. get_lib_extension()
 local lib_path = lib_folder .. '/' .. lib_filename

@@ -17,4 +17,4 @@ package.cpath = package.cpath
   .. '../../../../../target/release/?'
   .. get_lib_extension()
 
-return require('blink_cmp_fuzzy')
+return require('libblink_cmp_fuzzy')
